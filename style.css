@@ -1,0 +1,49 @@
+:root {
+  --color-background-body: #33658a;
+  --color-background-container: #eff2f1;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background-body);
+}
+
+.container {
+  background-color: var(--color-background-container);
+  max-width: 30rem;
+}
+
+.img {
+  max-width: 5rem;
+  display: block;
+  margin-inline: auto;
+  margin-block: 1rem;
+}
+
+#form {
+  transition: 300ms ease-in-out;
+}
+
+.form-hidden {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+input {
+  transition: 200ms ease-in-out;
+}
+
+.input-error-state {
+  outline-offset: 2px;
+  outline: 2px solid rgb(255, 100, 100);
+}
+
+@media (width < 50rem) {
+  .container {
+    max-width: 20rem;
+  }
+}

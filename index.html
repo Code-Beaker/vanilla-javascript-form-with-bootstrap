@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Form | Validation</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="h-100">
+      <div class="container p-3 rounded">
+        <section class="text-center">
+          <img class="img" src="assets/user.png" alt="" />
+          <h2 id="heading" class="fw-bold">Sign Up form</h2>
+          <p id="text">Let's get started</p>
+        </section>
+        <form id="form" action="index.html">
+          <div class="mb-2">
+            <label class="form-label" for="username">Enter a username:</label>
+            <input
+              type="text"
+              placeholder="gingerFrog12"
+              id="username"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-2">
+            <label class="form-label" for="fullname"
+              >Enter your full name:</label
+            >
+            <input
+              type="text"
+              placeholder="maximum 20 characters"
+              id="fullname"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-2">
+            <label class="form-label" for="email">Enter your email:</label>
+            <input
+              type="email"
+              placeholder="example@email.com"
+              id="email"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-2">
+            <label class="form-label" for="password"
+              >Enter a strong password:</label
+            >
+            <input
+              type="password"
+              placeholder="include numbers and symbols"
+              id="password"
+              class="form-control"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        </form>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
